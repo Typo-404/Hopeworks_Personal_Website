@@ -1,0 +1,143 @@
+:root {
+
+}
+
+* {
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	transition: all .25s ease-in-out;
+}
+
+html {
+	/* font-size:62.5% */
+}
+
+body {
+	font-family: cursive;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	position: relative;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+    object-fit: cover;
+}
+
+.img-container {
+	width: 200PX;
+}
+
+.img-container p {
+	text-align: center;
+	border: .3rem outset black;
+}
+
+.taste  {
+	color: red;
+}
+
+.smell {
+	color: yellow;
+}
+
+.touch {
+	color:blue;
+}
+
+.header-container {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+header {
+	display: grid;
+	grid-template-columns:  1fr;
+	background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.95) 10%,rgba(27, 111, 34, 0.984));
+	border: 3px double white;
+	height: 100%;
+    justify-items: center;
+}
+
+header h1 {
+	align-self: flex-end;
+	font-size: 2rem;
+	font-family: "Rubik Marker Hatch", system-ui;
+	color: white;
+}
+
+nav {
+	height:100%;
+    width: 100%;
+	font-family: "Permanent Marker", cursive;
+}
+
+.nav-container {
+	height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: self-end;
+    flex-direction: row;
+    justify-content: space-around;
+	font-size: 1.5rem;
+}
+
+.nav-container a {
+	color: white;
+}
+
+.hero {
+	background-image: linear-gradient(rgb(0, 0, 0, .1),rgb(0, 0, 0, .2)), url("/images/Home.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.flavor-formula {
+	display: flex;
+	justify-content: space-between;
+}
+
+.eq-container {
+	border: .3rem inset silver;
+	background: linear-gradient(to bottom, gray, white);
+}
+.equation {
+	display: grid;
+	justify-items: center;
+}
+
+.equation p {
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.answer {
+	align-self: center;
+	font-size: 5rem;
+	background: linear-gradient(to right, red, yellow, blue);
+	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.symbol {
+	align-self: center;
+	width: 75px;
+}
+
+main {
+	font-family: "Delicious Handrawn", cursive;
+	font-size: 2.5rem;
+	padding: 2rem;
+	color: rgba(255, 255, 255, 0.886);
+	text-transform: uppercase;
+}
+
+main h1 {
+	text-align: center;
+	margin: 2rem 0;
+	text-decoration: underline;
+}

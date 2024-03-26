@@ -1,0 +1,266 @@
+:root {
+
+}
+
+* {
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	transition: all 1s ease-in-out;
+}
+
+html {
+	/* font-size:62.5% */
+}
+
+body {
+	font-family: cursive;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	position: relative;
+}
+
+.header-container {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+header {
+	display: grid;
+	grid-template-columns:  1fr;
+	align-items: end;
+	background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.95) 10%,rgba(27, 111, 34, 0.984));
+	border: 3px double white;
+	height: 100%;
+	justify-items: center;
+}
+
+.heading {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+header h1 {
+	align-self: flex-end;
+	font-size: 2rem;
+	font-family: "Rubik Marker Hatch", system-ui;
+	color: white;
+}
+
+nav {
+	height:100%;
+	width: 100%;
+	font-family: "Permanent Marker", cursive;
+}
+
+.nav-container {
+	height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: self-end;
+    flex-direction: row;
+    justify-content: space-around;
+	font-size: 1.5rem;
+}
+
+.nav-container a {
+	color: white;
+}
+
+main {
+	font-family: "Delicious Handrawn", cursive;
+	font-size: 2.5rem;
+	padding: 2rem;
+	color: rgba(255, 255, 255, 0.886);
+	text-transform: uppercase;
+}
+
+main h1 {
+	text-align: center;
+	margin: 2rem 0;
+	text-decoration: underline;
+}
+
+.formula {
+	display: flex;
+	justify-content: space-between;
+}
+
+.formula img {
+	width: auto;
+	height: 200px;
+}
+
+
+
+.types {
+	margin-top: 5rem;
+	display: grid;
+	grid-template-rows: 1fr;
+	background: linear-gradient(blue, red, blue, blue, red, blue, red);
+	color: black;
+	transition: scale .5s ease-in-out;
+}
+
+.content {
+	display: flex;
+	width: 100%;
+	border: 4px outset black;
+	transition: scale .5s ease-in-out;
+}
+
+.co {
+	width: 100%;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	gap: 4rem;
+}
+
+
+.food {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.food_desc {
+	position: absolute;
+}
+
+.food img {
+	border: 3px solid black;
+	transition: scale .5s ease-in-out;
+	object-fit: cover;
+	width: 100%;
+	height: 500px;
+}
+
+.co {
+	transition: all .5s ease-in-out;
+}
+
+.co:hover {
+	color: white;
+}
+
+.food-img {
+	position: relative;
+	width: 600px;
+	height: 100%;
+}
+
+.meme {
+	width: 600px !important; 
+}
+
+.co-img {
+	width: auto;
+	height: 100px;
+	margin-top: 1rem;
+}
+
+
+
+.food-img:hover .img-desc {
+	opacity: 1;
+}
+
+.img-desc {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	height: 100%;
+  	width: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	transition: all .75s ease-in-out;
+	color: yellow;
+}
+
+
+.content h2 {
+	text-align: center;
+	align-self: center;
+	margin-right: 1rem;
+}
+
+.hero {
+	background-image: linear-gradient(rgb(0, 0, 0, .1),rgb(0, 0, 0, .2)), url("/images/Home.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	
+}
+
+.desc {
+	text-align: center;
+	font-family: sans-serif;
+}
+
+footer {
+	background: linear-gradient(to right, silver, orange);
+	font-size: 2rem;
+}
+
+img {
+    object-fit: cover;
+	width: 100%;
+	height: auto;
+}
+
+.images {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.imgs {
+	display: flex;
+	justify-content: space-around;
+}
+
+.imgs img {
+	width: auto;
+	height: 300px;
+}
+
+
+a:hover {
+	scale: 1.2;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+a {
+	font-size: 1.6rem;
+}
+
+
+
+a {
+	font-weight: bold;
+	transition: scale .5s ease-in-out;
+	overflow: hidden;
+	color: black;
+}
+
+.visited {
+	text-decoration: line-through;
+	color: navajowhite;
+}
+
+p {
+	line-height: 1.75;
+}
+
